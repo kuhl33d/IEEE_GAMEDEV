@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lighting in Unreal Engine 5 - From Basics to Mastery</title>
+
+
+
+    <!-- logo -->
+    <link rel="icon" href="img/32x32.png" type="image/icon type">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-xsm-6">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/Asset 2@3x-8.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-xsm-6">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="#instructor">Instructor</a></li>
+                                <li><a href="#course">Coures</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#work">Work</a></li>
+                                <li><a href="#faq">FAQs</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="https://www.facebook.com/Mr.KarimYasser/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/karim-yasser-0407901aa/"><i class="fa fa-linkedin"></i></a>
+                            <a href=" https://www.artstation.com/karimyasser1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                                <path d="M2 377.4l43 74.3A51.4 51.4 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.4 51.4 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"/>
+                              </svg>
+                              </a>
+                            <a href="https://www.instagram.com/karim_yasser0/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@KarimYasser"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/TheBazaarFullFrame.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Course</span>
+                                <h2>Learn from Industry Expert</h2>
+                                <a href="https://forms.gle/HX6nSfweYXtBAe2ZA" class="primary-btn">Join Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/northwood.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Course</span>
+                                <h2>Unlock The Lighting Potential</h2>
+                                <a href="https://forms.gle/HX6nSfweYXtBAe2ZA" class="primary-btn">Join Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/Final.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>Course</span>
+                                <h2>Up-level Your Skills in Unreal Engine 5</h2>
+                                <a href="https://forms.gle/HX6nSfweYXtBAe2ZA" class="primary-btn">Join Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Instructor Section Begin -->
+    <section class="instructor" id="instructor">
+        <div class="container">
+        <div class="banner rounded-4 p-5"
+            style="background-image: url(img/Profile.jpg); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+            <div class="text-content text-white py-5 my-5">
+            <p class="fs-4">
+                Unreal Authorized Instructor Partner for Epic Games <br> Senior Lighting Artist
+            </p>
+            <h1 class="display-1">
+                Karim  <br> Yasser
+            </h1>
+            </div>
+            <div class="row text-uppercase bg-black rounded-4 p-3 mt-5 experience-part">
+            <div class="col">
+                <div class="d-flex align-items-center gap-4 experience-gap">
+                <p class="text-light-emphasis justify-content-center m-0 ls-4">
+                     A Senior Lighting Artist who loves exploring what is under the hood of great lighting. I have half a decade of experience, I worked with multiple studios on different AAA and smaller projects. I'm experienced in Unreal Engine 5 and have been selected to be an Unreal Authorized Instructor Partner for Epic Games
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Instructor Section End -->
+
+    <!-- Logo Begin -->
+    <div class="logo spad">
+        <div class="container">
+            <div class="logo__carousel owl-carousel">
+                <a href="https://www.youtube.com/watch?v=a0yjBywwNb8" class="logo__item"><img src="img\02 - Personal Bio\Companies Logos\Logos\302163432_513242650802234_3494276995258701474_n.png" alt=""></a>
+                <a href="https://www.facebook.com/revenantvfx/videos/355805207275141" class="logo__item"><img src="img\02 - Personal Bio\Companies Logos\Logos\379917608_864481098403410_6484130474271949043_n.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=sZ1iA9LgQPY&t=1s" class="logo__item"><img src="img\02 - Personal Bio\Companies Logos\Logos\gunzilla-games.jpg" alt=""></a>
+                <a href="#" class="logo__item"><img src="img\02 - Personal Bio\Companies Logos\Logos\Myrkur Games.jpg" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=EC20gLfUHeA" class="logo__item"><img src="img\02 - Personal Bio\Companies Logos\Logos\People_Can_Fly_logo.png" alt=""></a>
+                <a href="https://www.credential.net/profile/karimyasser170832/wallet" class="logo__item"><img src="img\02 - Personal Bio\Companies Logos\Logos\Unreal Authorized Instructor.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- Logo End -->
+
+
+    <!-- Work Section Begin -->
+    <section class="work" id="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/karim-yasser-still-03-1-1-4.jpg">
+                <a href="https://www.youtube.com/watch?v=o0lphB3GEy0" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>Dusktide</h4>
+                    <ul>
+                        <li>Unreal Engine</li>
+                        <li>Quixel Megascans</li>
+                        <li>Megascans</li>
+                        <li>DaVinci Resolve</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/karim-yasser-final-render-still-4k.jpg">
+                <a href="https://www.youtube.com/watch?v=2qZmyknJTak" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/karim-yasser-afternoon.jpg">
+                <a href="https://www.youtube.com/watch?v=hH9SVAMbhOU" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="img/northwood.jpg">
+                <a href="https://www.youtube.com/watch?v=Q74RJzJyteI" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>North 'n' Woods</h4>
+                    <ul>
+                        <li>Unreal Engine</li>
+                        <li>Quixel Megascans</li>
+                        <li>Megascans</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/MasterofTheElements.jpg">
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/Gljufur.jpg">
+                <a href="https://www.youtube.com/watch?v=jFHNNjxu5cM" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/karim-yasser-swisslandsfinalrender-1-4-1.jpg">
+                <a href="https://www.youtube.com/watch?v=LhzOdxNp7ws" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>Swiss Land</h4>
+                    <ul>
+                        <li>Unreal Engine</li>
+                        <li>Quixel Megascans</li>
+                        <li>Megascans</li>
+                        <li>DaVinci Resolve</li>
+                        <li>PhotoShop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- course Section Begin -->
+     <section class="course-section" id="course">
+        <div class="container">
+        <div class="row section-reverse">
+            <div class="col-lg-8">
+                <div class="course-info-header">
+                    <h1>Lighting in Unreal Engine 5 - From Basics to Mastery</h2>
+                    <p>Master the art of lighting in Unreal Engine 5 with this comprehensive, step-by-step course designed to take you from foundational concepts to professional-level techniques. Whether you're a beginner eager to learn the basics or an experienced artist looking to refine your skills, this course will provide you with all the tools and knowledge needed to create stunning, cinematic lighting for any project.</p>
+                </div>
+                <div class="course-content">
+                    <h3>Course content</h3>
+                    <!-- <p>41 sections - 490 lectures - 65h 33m total length</p> -->
+                    <div class="course-content-info">
+
+
+                    <div class="accordion accordion-flush" id="accordion-flush">
+                        <div class="accordion-item border mb-3 ">
+                          <h5 class="accordion-header">
+                            <button class="accordion-button" style="font-weight:bold;" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                              aria-controls="collapseOne">
+                              Week 1 - Lighting in Unreal Engine 5 - From Basics to Mastery
+                            </button>
+                          </h5>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush"" >
+                                            <div class=" accordion-body">
+                            <p>Lighting in Unreal Engine 5 - From Basics to Mastery</p>
+                            <ul>
+                                <li>Welcome Video</li>
+                                <li>Light Types</li>
+                                <li>Reflection vs Refraction</li>
+                                <li>Shadow Types</li>
+                                <li>Inverse Square Law</li>
+                                <li>Color Temperature</li>
+                                <li>Color Theory vs Color Wheel</li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border mb-3 ">
+                        <h5 class="accordion-header">
+                          <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Week 2 - Lighting in Unreal Engine 5 - From Basics to Mastery
+                          </button>
+                        </h5>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                          <div class="accordion-body">
+                            <p>Deep Dive in Unreal Lighting Tools, Directional Light, Sky Light, Sky Atmosphere, Fog, Point Lights, Spot Lights, Rect Lights, Project Settings, Lumen, Post Process</p>
+                            <p> - Lighting Terminology </p>
+                            <ul>
+                                <li>Direct Lighting</li>
+                                <li>Indirect Lighting (Bounced)</li>
+                                <li>Shadows</li>
+                              </ul>
+                              <br><br>
+                              <p> - Static Lighting vs Dynamic Lighting</p>
+                              <ul>
+                                <li>Lumen</li>
+                                <li>Precomputed (Baked) Static</li>
+                                <li>Dynamic (Real-time)</li>
+                                <li>RayTracing</li>
+                                <li>Path Tracing</li>
+                              </ul>
+                              <br><br>
+                              <p> - Light Types</p>
+                              <ul>
+                                <li>Directional Light (Sun)</li>
+                                <li>Point (Omni) Light</li>
+                                <li>Spot Light</li>
+                                <li>Rect Light</li>
+                                <li>Sky Light</li>
+                                <li>HDRI Image-Based Lighting</li>
+                                <li>HDRI Backdrop</li>
+                                <li>Sky Atmosphere</li>
+                                <li>Exponential Height Fog</li>
+                                <li>Post Process Volume</li>
+                              </ul>
+                              <br><br>
+                              <p> - Lighting Properties</p>
+                              <ul>
+                                <li>Intensity</li>
+                                <li>Intensity Units</li>
+                                <li>Indirect Lighting Intensity</li>
+                                <li>Attenuation Radius</li>
+                                <li>Temperature</li>
+                                <li>Source Radius</li>
+                                <li>Source Angle</li>
+                                <li>Inverse Square Falloff</li>
+                                <li>IES Profiles</li>
+                              </ul>
+                              <br><br>
+                              <p> - Light Mobility</p>
+                              <ul>
+                                <p>Static:<p>
+                                <ul>
+                                    <li>Baked indirect and direct lighting</li>
+                                    <li>Cheapest to use</li>
+                                </ul>
+                                <br><br>
+                                <p> - Stationary:</p>
+                                <ul>
+                                    <li>Baked indirect lighting</li>
+                                    <li>High-quality direct lighting & shadows</li>
+                                    <li>Limited use (max 4 overlapping lights)</li>
+                                    <li>Highest quality / medium performance hit</li>
+                                  </ul>
+                                  <br><br>
+                                  <p> - Movable:</p>
+                                  <ul>
+                                    <li>Fully dynamic lights & shadows</li>
+                                    <li>Highest performance cost</li>
+                                    <li>No indirect lighting</li>
+                                  </ul>
+                              </ul>
+                              <br><br>
+                              <p> - Intro To Lumen</p>
+                              <ul>
+                                <li>Lumen GI</li>
+                                <li>Lumen Emissive Materials</li>
+                                <li>Project Settings</li>
+                                <li>Get Better AO</li>
+                                <li>Lumen Visualization Modes</li>
+                              </ul>
+                              <br><br>
+                              <p> - Calibration Balls</p>
+                              <ul>
+                                <li>Utilization of Calibration Balls</li>
+                                <li>Create Master Material</li>
+                                <li>Create Balls Instances</li>
+                              </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border mb-3 ">
+                        <h5 class="accordion-header">
+                          <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Week 3 - Lighting in Unreal Engine 5 - From Basics to Mastery
+                          </button>
+                        </h5>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                          <div class="accordion-body">
+                            <p>Outdoor - Exterior Lighting Practice</p>
+                         
+                          <p> - Get Project Files</p>
+                          <p> - First Light Mood: </p>
+                          <ul>
+                            <li>Cleaning Up The Scene</li>
+                            <li>Project Settings & Organizing Files</li>
+                            <li>Ambient Lighting Setup</li>
+                            <li>Directional Light</li>
+                            <li>Exponential Height Fog & Volumetric Fog</li>
+                            <li>Light Magic With Fake Lights</li>
+                            <li>Custom Fog Cards</li>
+                            <li>Custom Fog Volumes</li>
+                            <li>Light Gobos</li>
+                            <li>Post Processing vs Grayscale</li>
+                            <li>Final Thoughts and Renders</li>
+                          </ul>
+                          <br><br>
+                          <p> - Second Light Mood:</p>
+                          <ul>
+                            <li>Creating Sub Levels</li>
+                            <li>Ambient Lighting Setup</li>
+                            <li>Directional Light</li>
+                            <li>Exponential Height Fog & Volumetric Fog</li>
+                            <li>Light Magic With Fake Lights</li>
+                            <li>Custom Fog Cards</li>
+                            <li>Custom Fog Volumes</li>
+                            <li>Light Gobos</li>
+                            <li>Post Processing vs Grayscale</li>
+                            <li>Final Thoughts and Renders</li>
+                          </ul>
+                        </div>
+                    </div>
+                      </div>
+                      <div class="accordion-item border mb-3 ">
+                        <h5 class="accordion-header">
+                          <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Week 4 - Lighting in Unreal Engine 5 - From Basics to Mastery
+                          </button>
+                        </h5>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                          <div class="accordion-body">
+                            <p>Indoor - Interior Lighting Practice</p>
+                            <p> - Get Project Files</p>
+                            <p> - First Light Mood: </p>
+                            <ul>
+                              <li>Cleaning Up The Scene</li>
+                              <li>Project Settings & Organizing Files</li>
+                              <li>Ambient Lighting Setup</li>
+                              <li>Directional Light</li>
+                              <li>Exponential Height Fog & Volumetric Fog</li>
+                              <li>Light Magic With Fake Lights</li>
+                              <li>Custom Fog Cards</li>
+                              <li>Custom Fog Volumes</li>
+                              <li>Light Gobos</li>
+                              <li>Post Processing vs Grayscale</li>
+                              <li>Final Thoughts and Renders</li>
+                            </ul>
+                            <br><br>
+                            <p> - Second Light Mood:</p>
+                            <ul>
+                              <li>Creating Sub Levels</li>
+                              <li>Ambient Lighting Setup</li>
+                              <li>Directional Light</li>
+                              <li>Exponential Height Fog & Volumetric Fog</li>
+                              <li>Light Magic With Fake Lights</li>
+                              <li>Custom Fog Cards</li>
+                              <li>Custom Fog Volumes</li>
+                              <li>Light Gobos</li>
+                              <li>Post Processing vs Grayscale</li>
+                              <li>Final Thoughts and Renders</li>
+                            </ul>
+                            <br><br>
+                            <p>- Movie Render Queue Setup</p>
+                            <p> - Quick Guide to Davinci Resolve</p>
+                            <p> - Posting on ArtStation</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border mb-3 ">
+                        <h5 class="accordion-header">
+                          <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            Week 5 & 6 - Lighting in Unreal Engine 5 - From Basics to Mastery
+                          </button>
+                        </h5>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                          <div class="accordion-body">
+                            <p>Graduation Project on your own pace and you will receive support from the instructor. You should provide at least 2 different light setups for a project you select on your own or build with Megascans / Your assets</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border mb-3 ">
+                        <h5 class="accordion-header">
+                          <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            Pre-requisites
+                          </button>
+                        </h5>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                          <div class="accordion-body">
+                            <p> - Packs:</p>
+                            <ul>
+                                <li>The Bazaar: <a href="https://www.fab.com/listings/cff79d2c-4b55-45a2-80fc-960193a6dfd4">https://www.fab.com/listings/cff79d2c-4b55-45a2-80fc-960193a6dfd4</a></li>
+                                <li>Victorian Train Station and Railroad Modular Set: <a href="https://www.fab.com/listings/f6d06d4c-251a-464b-aaf0-3e68c8503582">https://www.fab.com/listings/f6d06d4c-251a-464b-aaf0-3e68c8503582</a></li>
+                                <li>Easy Fog: <a href="https://www.fab.com/listings/0a1c0c21-ff23-4fb7-9dc5-7beb6e16ce64">https://www.fab.com/listings/0a1c0c21-ff23-4fb7-9dc5-7beb6e16ce64</a></li>
+                                <li>Matte Painting Skybox Pack IX: Four Seasons: <a href="https://www.fab.com/listings/16c7386a-a699-48fa-8361-18d57d1d24d3">https://www.fab.com/listings/16c7386a-a699-48fa-8361-18d57d1d24d3</a></li>
+                            </ul>
+                            <br><br>
+                            <p>Engine Version: Preferably Unreal Engine 5.5</p>
+                            <p>Hardware Specs: Preferably good GPU that supports Ray Tracing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="course-img">
+                    <img src="img\courseimage.jpg" alt="">
+                </div>
+                <div class="course-info-2 section-bottom-margin">
+                    <div class="course-price">
+                        <h2>7,000 EGP - $140 USD</h2>
+                    </div>
+                    <div class="course-purchase">
+                        <a href="https://forms.gle/HX6nSfweYXtBAe2ZA">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </section>
+    <!-- course Section End -->
+
+
+    <!-- Services Section Begin -->
+    <section class="services spad" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What makes this learning experience unique?</h2>
+                        </div>
+                        <p>Fast-track your creative career with specialized course in Lighting for Games / VFX</p>
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/calendar.png" alt="">
+                                </div>
+                                <h4>FLEXIBLE LEARNING</h4>
+                                <p>Learn anywhere, anytime, and at your own pace</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/note.png" alt="">
+                                </div>
+                                <h4>PERSONALIZED FEEDBACK</h4>
+                                <p>Receive personalized feedback on all assignments from the instructor</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/infinite-time.png" alt="">
+                                </div>
+                                <h4>LIFETIME ACCESS</h4>
+                                <p>Enjoy lifetime access to the course content, including lectures, live Q&As, and feedback sessions</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/networking.png" alt="">
+                                </div>
+                                <h4>Networking</h4>
+                                <p>Join an active community and network with peers, mentors, and industry professionals. Our strong industry connections can help you access job opportunities post-graduation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- FAQ Section Begin -->
+
+    <section class="FAQ" id="faq">
+        <div class="container">
+          <div class="text-center pt-5">
+            <h2 class="display-3">
+              FAQs
+            </h2>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <div class="accordion accordion-flush" id="accordion-flush">
+                <div class="accordion-item border mb-3 ">
+                  <h5 class="accordion-header">
+                    <button class="accordion-button" style="font-weight:bold;" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
+                      aria-controls="collapse1">
+                      Is this course for beginners?
+                    </button>
+                  </h5>
+                  <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush"" >
+                                    <div class=" accordion-body">
+                    <p>- It’s suitable for artists who are looking to improve their skills in lighting or learning it as a new skill. We expect from learners to have basic knowledge in Unreal Engine</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border mb-3 ">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                    aria-controls="collapse2">
+                    How will my portfolio improve after this course?
+                  </button>
+                </h5>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                  <div class="accordion-body">
+                    <p>- You will have to submit 3 lighting projects with at least 2 light setups per each. We will go through totally different environments from indoor and outdoor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border mb-3 ">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                    aria-controls="collapse3">
+                    Will this course help me find better job opportunities?
+                  </button>
+                </h5>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                  <div class="accordion-body">
+                    <p>- Absolutely! Our aim is to help you improve your portfolio, teach you how to hunt good jobs and get in touch with industry professionals through LinkedIn and connect with other artists in our Discord community</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border mb-3 ">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                    aria-controls="collapse4">
+                    How long is the course?
+                  </button>
+                </h5>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                  <div class="accordion-body">
+                    <p>- It’s an extensive 6-week course. You will receive pre-recorded content for 4 weeks and a live Q&A and review session for 6 weeks, once per week. The last 2 weeks will be a graduation project when you have to submit 2 different light setups for a project you choose, and of course we will support you!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border mb-3 ">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                    aria-controls="collapse5">
+                    Is this course specific for Games?
+                  </button>
+                </h5>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                  <div class="accordion-body">
+                    <p>- No! You will learn the core of the lighting and the advanced techniques that are used in the top level industry studios. You will be able to benefit from this knowledge in any other category not just games</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border mb-3 ">
+                <h5 class="accordion-header">
+                  <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
+                    aria-controls="collapse6">
+                    What if my question is not listed here?
+                  </button>
+                </h5>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+                  <div class="accordion-body">
+                    <p>- Feel free to reach out to us using WhatsApp: +201099003729 or Email: karim.yasser@foundryspectrum.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    
+    <!-- FAQ Section End -->
+    <!-- Call To Action Section Begin -->
+    <section class="callto sp__callto">
+        <div class="container">
+            <div class="callto__services spad set-bg" data-setbg="img/highresscreen.jpg">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <div class="callto__text">
+                            <h2>CREATE AWESOME ENVIROMENTS WITH FOUNDRYSPECTRUM POWERFUL WORKSHOP</h2>
+                            <p>Level up your environments by learning the cores of lighting from industry expert. Give your environment a re-birth and a new life!</p>
+                            <a href="https://forms.gle/HX6nSfweYXtBAe2ZA">Join Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/Asset 2@3x-8.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="https://www.facebook.com/Mr.KarimYasser/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/karim-yasser-0407901aa/"><i class="fa fa-linkedin"></i></a>
+                            <a href=" https://www.artstation.com/karimyasser1">                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                                <path d="M2 377.4l43 74.3A51.4 51.4 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.4 51.4 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"/>
+                              </svg></a>
+                            <a href="https://www.instagram.com/karim_yasser0/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@KarimYasser"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
